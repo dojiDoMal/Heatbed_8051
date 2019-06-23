@@ -1,4 +1,4 @@
-;******************* VARIABLES DEFINITIONS *********************   
+;******************* VARIABLES DEFINITIONS *********************  
    DQ       BIT  P3.0    ; 1 wire line
    RS       EQU  P1.0
    RW       EQU  P1.1
@@ -10,7 +10,7 @@
    WDMSB    DATA 31H
 ;***************************************************************
    ORG      0000H        ; Reset vector
-   MOV      50H, #90     ; This stores the target temperature value (90°C) in the address 50h
+   MOV      50H, #90     ; This stores the target temperature value (90Â°C) in the address 50h
    MOV      P0, #0       ; Clear P0 ports
    LJMP     MAIN         
    ORG      000BH        ; Timer0 vector
@@ -43,7 +43,7 @@ LCD_AT3:
    DJNZ     R6, LCD_AT3
 LCD_AT4:      
    MOV      A, #0DFH     
-   CALL     W_DAT        ; Write 'º' on display
+   CALL     W_DAT        ; Write 'Âº' on display
    MOV      A, #43H      
    CALL     W_DAT        ; Write 'C' on display
    MOV      A, #16       
