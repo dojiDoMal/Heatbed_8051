@@ -322,7 +322,7 @@ CONFIG:
    CALL     BUSY_CHECK    
    ;CALL     WAIT           
    MOV      LCD_DATA, A    ; Load data to P2
-   CALL     WAIT           
+   CALL     WAIT           ;       
    CLR      E              
    ;CALL     WAIT           
    RET 
