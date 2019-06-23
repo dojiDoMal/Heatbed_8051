@@ -1,2 +1,6 @@
-# Heatbed_8051
-This repository contains a university project that me and two more people developed using a 8051 microcontroller.
+# Heatbed with 8051 µC ![Build Status](https://camo.githubusercontent.com/cfcaf3a99103d61f387761e5fc445d9ba0203b01/68747470733a2f2f7472617669732d63692e6f72672f6477796c2f657374612e7376673f6272616e63683d6d6173746572)
+This repository contains a university project that me and two more people developed using a 8051 microcontroller. The project consists of a heatbed with controled temperature for a 3D Printer. This was developed under orientation of Professor Reinaldo Imbiriba from University of Fortaleza (UNIFOR).
+# Why ?
+The motive behind this project is that for the 3D Printer to properly work with a material called [ABS](https://en.wikipedia.org/wiki/Acrylonitrile_butadiene_styrene) (wich is different from the more common [PLA](https://en.wikipedia.org/wiki/Polylactic_acid)), it needs to have a heatbed as a base, since ABS has a high melting point and has the tendency to warp if cooled while printing. Thus, ABS needs to be printed on a heated bed which unfortunately is not easily available in most at-home printers. 
+The final project is not only suitable for ABS but other materials since it permits a considerable high range of temperature. Other important aspect of the project is that it allows more general applications (not only for 3D Printers) that involves temperature control.
+# How it works ?
