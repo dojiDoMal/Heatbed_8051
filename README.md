@@ -46,7 +46,7 @@ One thing that I noticed after soldering it on the perfboard was that they were 
 ![Heatbed](https://github.com/dojiDoMal/Heatbed_8051/blob/master/Images/heatbed.png?raw=true)
 
 The label *VA* represents the positive terminal of the power supply. The key components here are the optocoupler and the MOSFET. Together they control the current flow on the heatbed. If you don't have a IRF540N or want to use another MOSFET, make sure to see the *VGS* value required for the drain current on the component datasheet and change *R6* AND *R4* (they are a voltage divider) based on it, you will also need to look for the *RDS* value, because the MOSFET will dissipate heat. The lower the *RDS* value the less heat will be dissipated, wich means that you will be allowed to use a smaller heatsink for it.
-[Here's a picture showing how I soldered this circuitry.](https://photos.app.goo.gl/G5Fa3PRb3iHo7LiRA)
+[Here's a picture showing how I soldered this circuitry.](https://bit.ly/31QxkhY)
 
 ### Heads-up
 
