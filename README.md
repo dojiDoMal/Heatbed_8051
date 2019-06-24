@@ -22,7 +22,7 @@ If you follow the circuitry above, you need to make sure that the 12V power supp
 ### Microcontroller
 ![Microcontroller](https://github.com/dojiDoMal/Heatbed_8051/blob/master/Images/89s52.png?raw=true)
 
-A 11.0592MHz crystal is recommended. Resistor *R1* is not necessary and capacitor *C1* can be changed to 10µF. *EA'* pin is connected to 5V of regulator as well as the capacitor *C1* and the *VCC* pin of the microcontroller. *P2* port is used to send data to LCD (*P2.0* is the LSB). *P1.0*, *P1.1* and *P1.2* pins are connected to *RS*, *RW* and *E* pins of LCD, respectively. *P1.5* is connected to a button and decrements the target temperature value in Celsius degrees. Similarly *P1.7* is connected to a button that increments the target temperature. *P3.0* is connected to data pin (*DQ* pin) of the temperature sensor. Finally *P3.7* is connected to optocoupler cathode (*K* pin).
+A 11.0592MHz crystal is recommended. Resistor *R1* is not necessary and capacitor *C1* can be changed to 10µF. *EA'* pin is connected to 5V of regulator as well as the capacitor *C1* and the *VCC* pin of the microcontroller. *P2* port is used to send data to LCD (*P2.0* is the LSB). *P1.0*, *P1.1* and *P1.2* pins are connected to *RS*, *RW* and *E* pins of LCD, respectively. *P1.5* is connected to a button and decrements the target temperature value in Celsius degrees. Similarly *P1.7* is connected to a button that increments the target temperature. *P3.0* is connected to data pin (*DQ* pin) of the temperature sensor. Finally *P3.7* is connected to optocoupler cathode (*K* pin). 
 
 ### LCD
 ![LCD](https://github.com/dojiDoMal/Heatbed_8051/blob/master/Images/lcd.png?raw=true)
