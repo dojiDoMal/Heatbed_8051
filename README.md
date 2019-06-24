@@ -56,7 +56,21 @@ After burning the firmware .HEX file on the AT89S52 the circuitry can be assembl
 
 # Extra stuff
 
+### Some pictures of the power supply that I used
 
+[#1](https://bit.ly/2FH1yLd)
+
+[#2](https://bit.ly/31RHpeD)
+
+[#3](https://bit.ly/2XzwSW4)
+
+### Final project pictures :smirk:
+
+[#1](https://bit.ly/2NbCBxr)
+
+[#2](https://bit.ly/2KzUjZc)
+
+[#3](https://bit.ly/2Y9MuN3)
 
 
 
