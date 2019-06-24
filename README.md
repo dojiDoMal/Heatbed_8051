@@ -41,8 +41,23 @@ This one can be a bit tricky if overlooked becuase you need to place it very tig
 
 One thing that I noticed after soldering it on the perfboard was that they were interfering with the LCD (some kind of indutance effect), to counter this you can try using resistors in series with them. As written above the button connected to *P1.5* pin decrements the target temperature value in Celsius degrees and the button connected to *P1.7* increments the target temperature.
 
+### Heatbed
+
+![Heatbed](https://github.com/dojiDoMal/Heatbed_8051/blob/master/Images/heatbed.png?raw=true)
+
+The label *VA* represents the positive terminal of the power supply. The key components here are the optocoupler and the MOSFET. Together they control the current flow on the heatbed. If you don't have a IRF540N or want to use another MOSFET, make sure to see the *VGS* value required for the drain current on the component datasheet and change *R6* AND *R4* (they are a voltage divider) based on it, you will also need to look for the *RDS* value, because the MOSFET will dissipate heat. The lower the *RDS* value the less heat will be dissipated, wich means that you will be allowed to use a smaller heatsink for it.
+[Here's a picture showing how I soldered this circuitry.](https://raw.githubusercontent.com/dojiDoMal/Heatbed_8051/master/Images/heatbed_solder.JPG?token=AKZXVXCQDVRO2NARP67CUCS5CA2CM)
+
+### Heads-up
+
 After burning the firmware .HEX file on the AT89S52 the circuitry can be assembled using a [perfboard](https://en.wikipedia.org/wiki/Perfboard) or a [veroboard](https://en.wikipedia.org/wiki/Veroboard) (I don't recommend using a breadboard since the current passing through the heatbed is __very high__ and therefore might melt the breadboard connections). It is also recommended that you use a 40 pin DIP socket when building to avoid soldering the AT89S52 directly for two mainly reasons: 
 1. Avoid overheating the microcontroller.
 2. Facilitate the handling and exchange of the microcontroller and it's firmware.
+
+# Extra stuff
+
+
+
+
 
 
